@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+.margin {
+    margin: 10px;
+}
+
+.margin-right {
+    margin-right: 10px;
+}
+
+.margin-top {
+    margin-top: 10px;
+}
+
+.is-block {
+    display: block;
+}
+
+.is-inline-block {
+    display: inline-block;
+}
+
+.is-center {
+    margin-left: auto;
+    margin-right: auto;
+}
