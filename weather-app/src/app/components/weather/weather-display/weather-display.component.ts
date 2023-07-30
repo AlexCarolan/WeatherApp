@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Forcast } from 'src/app/interfaces/forcast';
 
 @Component({
   selector: 'app-weather-display',
@@ -7,6 +8,6 @@ import { Component, Input } from '@angular/core';
 })
 export class WeatherDisplayComponent {
 
-  @Input() public locationName: string = "";
+  @Input() public forcast: Forcast[] = [];
 
 }

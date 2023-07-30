@@ -1,0 +1,6 @@
+<div class="day-container">
+    <p class="is-text-center">{{dayForcast?.date | date:'fullDate'}}</p>
+    <img class="is-center" [src]="dayForcast?.day?.condition?.icon">
+    <p>{{dayForcast?.day?.maxtemp_c}} °C</p>
+    <p>{{dayForcast?.day?.condition?.text}}</p>
+</div>
