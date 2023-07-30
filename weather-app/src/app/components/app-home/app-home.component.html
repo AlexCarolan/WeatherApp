@@ -1,9 +1,7 @@
-<div class="margin">
-    <h1>My Account</h1>
-    <div class="is-inline-block">
-        <label class="margin-right" for="employeeId">Employee ID:</label>
-        <input type="text" id="employeeId" name="employeeId" [(ngModel)]="employeeId">
-        <button class="is-block is-center margin-top" type="button" (click)="getData()">Get Data</button>
-    </div>
+<app-header></app-header>
+
+<div class="flex-container">
+    <app-search class="search" (searchOutput)="findLocation($event)"></app-search>
+    <app-weather-display locationName="Test"></app-weather-display>
 </div>
 

@@ -1,0 +1,11 @@
+@import "theme";
+
+h1 {
+    color: $primary-contrast-color;
+}
+
+div {
+    border: 2px solid $primary-dark-color;
+    background-color: $primary-color;
+    display: flex;
+}

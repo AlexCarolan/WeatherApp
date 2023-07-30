@@ -8,15 +8,8 @@ import { ApiService } from 'src/app/services/api-service/api-service.service';
 })
 export class AppHomeComponent {
 
-  constructor(private apiService: ApiService) {}
-
-  public employeeId: string = '';
-
-  public getData(): void {
-    console.log(this.employeeId);
-    this.apiService.getAuth().subscribe((data) => {
-      console.log("auth", data);
-    });
+  public findLocation(location: string) {
+    console.log("location", location);
   }
 
 }
