@@ -1,4 +1,4 @@
-<div class="day-container padding margin">
+<div class="day-container padding margin" appTemperatureColor [temperature]="temp" >
     <p class="is-text-center">{{dayForcast?.date | date:'fullDate'}}</p>
     <img class="is-center" [src]="dayForcast?.day?.condition?.icon">
     <p>{{dayForcast?.day?.maxtemp_c}} °C</p>

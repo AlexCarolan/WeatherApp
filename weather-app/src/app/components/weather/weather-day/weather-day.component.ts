@@ -8,4 +8,10 @@ import { Forcast } from 'src/app/interfaces/forcast';
 })
 export class WeatherDayComponent {
   @Input() dayForcast: Forcast| null = null;
+
+  public temp: number = 0;
+
+  ngOnInit() {
+    if (this.dayForcast?.day?.maxtemp_c) this.temp = this.dayForcast?.day?.maxtemp_c;
+  }
 }

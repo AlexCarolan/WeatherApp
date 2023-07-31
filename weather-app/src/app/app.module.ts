@@ -10,6 +10,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { WeatherDisplayComponent } from './components/weather/weather-display/weather-display.component';
 import { SearchComponent } from './components/search/search.component';
 import { WeatherDayComponent } from './components/weather/weather-day/weather-day.component';
+import { TemperatureColorDirective } from './directives/temperature-color/temperature-color.directive';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { WeatherDayComponent } from './components/weather/weather-day/weather-da
     WeatherDisplayComponent,
     SearchComponent,
     WeatherDayComponent,
+    TemperatureColorDirective,
   ],
   imports: [
     BrowserModule,
