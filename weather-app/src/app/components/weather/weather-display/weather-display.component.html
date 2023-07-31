@@ -1,3 +1,5 @@
-<div *ngFor="let dayForcast of forcast">
-    <app-weather-day [dayForcast]="dayForcast"></app-weather-day>
+<div class="flex-container">
+    <ng-container *ngFor="let dayForcast of forcast">
+        <app-weather-day class="flex-item" [dayForcast]="dayForcast"></app-weather-day>
+    </ng-container>
 </div>

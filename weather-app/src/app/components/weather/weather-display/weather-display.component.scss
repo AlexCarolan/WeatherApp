@@ -1,0 +1,16 @@
+.flex-container {
+    margin: 20px;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-align-content: space-around;
+    align-content: space-around;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    row-gap: 10px;
+}

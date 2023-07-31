@@ -20,7 +20,7 @@ export class AppHomeComponent {
   }
 
   public findLocation(location: string) {
-    this.weatherService.getForcast(location, 7).subscribe({
+    this.weatherService.getForcast(location, 5).subscribe({
       next: (data) => {
         console.log(data);
         this.error = false;
