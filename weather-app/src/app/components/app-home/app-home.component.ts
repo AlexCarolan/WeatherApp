@@ -13,6 +13,7 @@ export class AppHomeComponent {
   public location: Locations | null = null;
   public forcast: Forcast[] | null = null;
   public error: boolean = false;
+  public hasSearched: boolean = false;
 
   constructor(
     private weatherService: WeatherService
@@ -22,12 +23,13 @@ export class AppHomeComponent {
   public findLocation(location: string) {
     this.weatherService.getForcast(location, 5).subscribe({
       next: (data) => {
-        console.log(data);
+        this.hasSearched = true;
         this.error = false;
         this.location = data.location;
         this.forcast = data.forecast.forecastday;
       },
       error: () => {
+        this.hasSearched = true;
         this.error = true;
         this.location = null;
         this.forcast = null;

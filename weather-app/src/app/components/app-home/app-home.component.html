@@ -6,8 +6,9 @@
         <h2 class="is-text-center">{{location.name}}, {{location.region}}</h2>
         <h2 class="is-text-center">{{location.country}}</h2>
     </div>
-    <div *ngIf="error" class="margin-top">
-        <h2 class="error">Location not found</h2>
+    <div class="margin-top--double">
+        <h2 *ngIf="error" class="error">Location not found</h2>
+        <h2 *ngIf="!hasSearched">Search for a location</h2>
     </div>
     <app-weather-display *ngIf="forcast" [forcast]="forcast"></app-weather-display>
 </div>
